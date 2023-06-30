@@ -83,15 +83,15 @@ btnNew.addEventListener('click', function () {
     console.log("New game");
     document.querySelector(`.player--${activePlayer}`).classList.remove("player--winner");
     currentScore = 0;
+    activePlayer = 0;
     document.querySelector(`.player--${activePlayer}`).classList.add("player--active");
     score[0] = 0;
     score[1] = 0;
     document.getElementById('current--0').textContent = '0';
     document.getElementById('current--1').textContent = '0';
+    dice.classList.add('hidden');
+
     score0.textContent = '0';
     score1.textContent = '0';
     playingState = true;
-
-
 })
-
