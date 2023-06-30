@@ -82,6 +82,8 @@ btnNew.addEventListener('click', function () {
     document.querySelector(`#name--${activePlayer}`).textContent = `Player ${activePlayer + 1}`;
     console.log("New game");
     document.querySelector(`.player--${activePlayer}`).classList.remove("player--winner");
+        document.querySelector(`.player--${activePlayer}`).classList.remove("player--active");
+
     currentScore = 0;
     activePlayer = 0;
     document.querySelector(`.player--${activePlayer}`).classList.add("player--active");
